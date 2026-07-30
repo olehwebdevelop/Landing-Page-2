@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTEMIS I — NASA Editorial</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-section="hero">
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-agency">NASA</span>
+        <span class="logo-sep">/</span>
+        <span class="logo-program">ARTEMIS I</span>
+      </div>
+      <div class="header-coords">
+        <span>LAT: 28.5721° N</span>
+        <span>LON: 80.6480° W</span>
+        <span class="status-dot">● ONLINE</span>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="tech-tag">[ MISSION DESIGNATION: DRO-1 ]</div>
+        <h1 class="hero-title">
+          <span>ARTEMIS</span>
+          <span class="num">I</span>
+        </h1>
+        <p class="hero-dates">NOVEMBER 16 — DECEMBER 11, 2022</p>
+
+        <div class="hero-image-wrapper parallax" data-speed="0.2">
+          <img src="hero.jpg" alt="Artemis I SLS Rocket" class="hero-img">
+          <div class="img-overlay-grid"></div>
+          <div class="img-caption">
+            <span>SLS BLOCK 1 — KENNEDY SPACE CENTER</span>
+            <span>PAD 39B</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span class="line"></span>
+        <span class="text">SCROLL TO EXPLORE</span>
+      </div>
+    </section>
+
+    <section class="section mission-section" id="mission">
+      <div class="container grid-2">
+        <div class="editorial-label">
+          <span class="num">01</span>
+          <span class="title">THE MISSION</span>
+        </div>
+        <div class="mission-text">
+          <h2 class="section-heading">THE FIRST STEP TOWARD RETURNING TO THE MOON</h2>
+          <p class="lead">
+            Artemis I was an uncrewed flight test of next-generation systems, laying the foundation for human deep space exploration.
+          </p>
+          <p class="body-text">
+            The primary objective of the mission was to test the safety and reliability of the Orion spacecraft in the harsh environment of deep space, evaluate the performance of the Space Launch System (SLS) rocket, and ensure heat shield integrity during atmospheric re-entry at speeds approaching 40,000 km/h.
+          </p>
+          <div class="mission-meta">
+            <div class="meta-item">
+              <span class="meta-val">40,000 KM/H</span>
+              <span class="meta-key">ENTRY SPEED</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-val">2,800 °C</span>
+              <span class="meta-key">HEAT SHIELD TEMP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <div class="editorial-label">
+          <span class="num">02</span>
+          <span class="title">TRAJECTORY & TIMELINE</span>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="trajectory-canvas">
+            <svg viewBox="0 0 1000 300" class="orbit-svg">
+              <line x1="0" y1="150" x2="1000" y2="150" class="svg-grid" />
+              <line x1="200" y1="0" x2="200" y2="300" class="svg-grid" />
+              <line x1="800" y1="0" x2="800" y2="300" class="svg-grid" />
+              
+              <circle cx="150" cy="150" r="28" class="celestial-earth" />
+              <text x="150" y="195" class="svg-label">EARTH</text>
+
+              <circle cx="820" cy="150" r="16" class="celestial-moon" />
+              <text x="820" y="185" class="svg-label">MOON</text>
+
+              <path id="orbitPath" d="M 150,150 C 350,20 650,20 820,134 C 880,180 880,100 820,150 C 700,220 300,280 150,150" class="path-bg" />
+              <path id="orbitActive" d="M 150,150 C 350,20 650,20 820,134 C 880,180 880,100 820,150 C 700,220 300,280 150,150" class="path-active" />
+
+              <circle id="orionMarker" cx="150" cy="150" r="5" class="orion-marker" />
+            </svg>
+          </div>
+
+          <div class="timeline-steps">
+            <div class="timeline-step" data-progress="0">
+              <div class="step-time">NOV 16, 2022 — 01:47 EST</div>
+              <div class="step-dot"></div>
+              <div class="step-content">
+                <h3>Launch</h3>
+                <p>Liftoff from Kennedy Space Center. The powerful SLS rocket launched Orion into orbit.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step" data-progress="0.25">
+              <div class="step-time">NOV 21, 2022</div>
+              <div class="step-dot"></div>
+              <div class="step-content">
+                <h3>Lunar Flyby</h3>
+                <p>Approach to the Moon within 130 km of the surface to perform a gravitational flyby maneuver.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step" data-progress="0.55">
+              <div class="step-time">NOV 25 — DEC 01</div>
+              <div class="step-dot"></div>
+              <div class="step-content">
+                <h3>Distant Retrograde Orbit</h3>
+                <p>Insertion into Distant Retrograde Orbit. Orion traveled farther than any human-rated spacecraft ever before.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step" data-progress="0.80">
+              <div class="step-time">DEC 05, 2022</div>
+              <div class="step-dot"></div>
+              <div class="step-content">
+                <h3>Return Journey</h3>
+                <p>Second lunar flyby and ESA Service Module engine burn to initiate trajectory back to Earth.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step" data-progress="1.0">
+              <div class="step-time">DEC 11, 2022 — 12:40 EST</div>
+              <div class="step-dot"></div>
+              <div class="step-content">
+                <h3>Pacific Ocean Splashdown</h3>
+                <p>Successful splashdown in the Pacific Ocean off the coast of Baja California. Mission complete.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section numbers-section" id="numbers">
+      <div class="container">
+        <div class="editorial-label">
+          <span class="num">03</span>
+          <span class="title">MISSION STATS</span>
+        </div>
+
+        <div class="numbers-grid">
+          <div class="number-card">
+            <span class="big-num" data-target="25.5">0</span>
+            <span class="unit">DAYS</span>
+            <span class="desc">Total mission duration in deep space</span>
+          </div>
+
+          <div class="number-card">
+            <span class="big-num" data-target="2.1">0</span>
+            <span class="unit">MILLION KM</span>
+            <span class="desc">Total distance traveled by the Orion spacecraft</span>
+          </div>
+
+          <div class="number-card">
+            <span class="big-num" data-target="1">0</span>
+            <span class="unit">ORBIT AROUND THE MOON</span>
+            <span class="desc">Full revolution around the Moon in Distant Retrograde Orbit</span>
+          </div>
+
+          <div class="number-card">
+            <span class="big-num" data-target="437321">0</span>
+            <span class="unit">KM FROM EARTH</span>
+            <span class="desc">Record distance from Earth for a spacecraft designed for humans</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section orion-section" id="orion">
+      <div class="container">
+        <div class="editorial-label">
+          <span class="num">04</span>
+          <span class="title">SPACECRAFT SPECIFICATIONS</span>
+        </div>
+
+        <div class="orion-layout">
+            <div class="orion-image-container">
+                <img src="spacecraft.jpg" alt="Orion Spacecraft Blueprint" class="orion-img">
+
+                <div class="callout" style="top: 29%; left: 51.5%;">
+                <div class="callout-dot"></div>
+                <div class="callout-box">
+                    <span class="title">CREW MODULE</span>
+                    <span class="sub">Pressurized capsule for a crew of 4 astronauts</span>
+                </div>
+                </div>
+
+                <div class="callout" style="top: 41%; left: 51.5%;">
+                <div class="callout-dot"></div>
+                <div class="callout-box">
+                    <span class="title">HEAT SHIELD</span>
+                    <span class="sub">5-meter heat shield made of Avcoat material</span>
+                </div>
+                </div>
+
+                <div class="callout" style="top: 68%; left: 51.5%;">
+                <div class="callout-dot"></div>
+                <div class="callout-box">
+                    <span class="title">EUROPEAN SERVICE MODULE</span>
+                    <span class="sub">Propulsion, power, and life support systems provided by ESA</span>
+                </div>
+                </div>
+            </div>
+
+          <div class="orion-specs-list">
+            <div class="spec-row">
+              <span class="spec-key">HEIGHT</span>
+              <span class="spec-val">26 FT / 7.9 M</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">DIAMETER</span>
+              <span class="spec-val">16.5 FT / 5.0 M</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">LAUNCH MASS</span>
+              <span class="spec-val">33,446 KG</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">SOLAR PANELS</span>
+              <span class="spec-val">4 WINGS (11 KW OUTPUT)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section beyond-section" id="beyond">
+      <div class="container grid-2">
+        <div class="editorial-label">
+          <span class="num">05</span>
+          <span class="title">BEYOND ARTEMIS I</span>
+        </div>
+        <div class="beyond-content">
+          <h2 class="section-heading">THE FUTURE OF THE PROGRAM</h2>
+          <p class="body-text">
+            Artemis I paved the way for humanity's next giant leap. The next mission, <strong>Artemis II</strong>, will carry a crew of four astronauts on a flyby around the Moon. It will be followed by <strong>Artemis III</strong>, marking a new era of human lunar landings and the establishment of the Gateway space station.
+          </p>
+
+          <div class="next-missions">
+            <div class="mission-card">
+              <span class="m-title">ARTEMIS II</span>
+              <span class="m-desc">First crewed flight test around the Moon.</span>
+            </div>
+            <div class="mission-card">
+              <span class="m-title">ARTEMIS III</span>
+              <span class="m-desc">Humanity's return to the lunar surface.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section" id="final">
+      <div class="final-bg-grid"></div>
+      <div class="container final-content">
+        <span class="tech-tag">[ MISSION ACCOMPLISHED / NEXT CHAPTER ]</span>
+        <h2 class="final-title">WE ARE GOING BACK.</h2>
+        <div class="final-footer">
+          <span>NATIONAL AERONAUTICS AND SPACE ADMINISTRATION</span>
+          <span>HUMAN EXPLORATION PROGRAM</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
